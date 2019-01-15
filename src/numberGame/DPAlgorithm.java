@@ -32,7 +32,7 @@ public class DPAlgorithm {
 				firstSum += game[j];
 				first = j--;
 			}
-			/* SEcon player choose. */
+			/* Second player choose. */
 			if (i != j) {
 				if (game[i] - mat[i + 1][j] > game[j] - mat[i][j - 1]) {// the left element is bigger.
 					secondSum += game[i];
@@ -41,6 +41,9 @@ public class DPAlgorithm {
 					secondSum += game[j];
 					second = j--;
 				}
+			} else {// j=0 or i=game.length-1, the second takes the last element
+				second = j;
+				secondSum = secondSum + game[j];
 			}
 			System.out.println(
 					"first: game[" + first + "] = " + game[first] + ", second: game[" + second + "] = " + game[second]);
@@ -48,19 +51,19 @@ public class DPAlgorithm {
 		System.out.println(
 				"firstSum = " + firstSum + ", secondSum = " + secondSum + ", diff = " + (firstSum - secondSum));
 	}
-	
+
 	public static void printMatrix(int mat[][]) {
 		System.out.println("The matrix: \n");
-	    for(int i = 0; i < mat.length; i++) {
-	        for(int j = 0; j < mat[0].length; j++) {
-	            System.out.print(mat[i][j] + "\t");
-	        }  
-	        System.out.println("\n");
-	    }  
+		for (int i = 0; i < mat.length; i++) {
+			for (int j = 0; j < mat[0].length; j++) {
+				System.out.print(mat[i][j] + "\t");
+			}
+			System.out.println("\n");
+		}
 	}
 
 	public static void main(String[] args) {
-		int game[] = {1, 3, 6, 1, 3, 6};
+		int game[] = { 1, 3, 6, 1, 3, 6 };
 		int[][] mat = buildMatrix(game);
 		printMatrix(mat);
 		gameStrategy(game);
