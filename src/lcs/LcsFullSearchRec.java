@@ -1,5 +1,9 @@
 package lcs;
-
+/**
+ * O(2^m+n * min(n,n))
+ * @author Shay Naor
+ *
+ */
 public class LcsFullSearchRec {
 	private String ans;
 
@@ -28,8 +32,8 @@ public class LcsFullSearchRec {
 	}
 
 	public static void main(String[] args) {
-		String x = "";
-		String y = "";
+		String x = "bonirheimataoved";
+		String y = "bonaoved";
 		LcsFullSearchRec xGy = new LcsFullSearchRec(x, y);
 		System.out.println(xGy);
 

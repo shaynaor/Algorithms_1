@@ -2,6 +2,7 @@ package lcs;
 
 /**
  * **********************This Algorithm returns not optimal answer.************************
+ * O(n+m) + O(min(n,m)
  * @author Shay Naor
  *
  */

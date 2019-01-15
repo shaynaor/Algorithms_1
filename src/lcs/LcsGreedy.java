@@ -9,6 +9,7 @@ public class LcsGreedy {
 	private String ans;
 	private int start, index, i,m,n;
 	
+	/* O(n*m) */
 	public LcsGreedy(String X, String Y) {
 		ans = "";
 		start = index = i = 0;
@@ -22,7 +23,7 @@ public class LcsGreedy {
 				start = index + 1;
 			}
 			i++;
-			index++;
+			//index++;
 		}
 	}
 	
