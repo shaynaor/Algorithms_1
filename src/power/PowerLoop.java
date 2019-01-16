@@ -1,11 +1,11 @@
 package power;
 
-public class PowerLoop {
+public class PowerLoop {//O(logn)
 	
 	public static double powerLoop(double x, int n) {
 		double result = 1;
 		while(n != 0) {
-			if(n % 2 == 1) result *= x;
+			if(n % 2 == 1) result *= x;//mult when the digit in binary representation is 1.
 			x *= x;
 			n /= 2;
 		}

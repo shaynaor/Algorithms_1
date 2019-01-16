@@ -13,7 +13,7 @@ public class FibByPow {
 			mat = matSq2Mult(res, mat);
 			n /= 2;
 		}
-		return res[0][0];
+		return res[0][1];
 	}
 
 	private static long[][] matSq2Mult(long m1[][], long m2[][]) {
@@ -26,7 +26,7 @@ public class FibByPow {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(fibLoop(310));
+		System.out.println(fibLoop(8));
 
 	}
 

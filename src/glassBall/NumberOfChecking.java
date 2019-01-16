@@ -22,14 +22,13 @@ public class NumberOfChecking {
 
 	/* n= the number of floors , k = the number of balls. */
 	public static int numberOfChecking(int n, int k) {
-		int numChecks = 0, min = n + 1;
+		int min = n + 1;
 		int checks[][] = new int[k + 1][n + 1];
 		for (int j = 0; j <= n; j++) {
-			checks[0][j] = 0; // INIT
 			checks[1][j] = j;// one ball
 		}
 		for (int i = 0; i <= k; i++) {
-			checks[i][0] = 0;
+			checks[i][1] = 1;//floor one
 		}
 		for (int i = 2; i <= k; i++) {// i - the number of the ball.
 			for (int j = 2; j <= n; j++) {// j - the number of the floor
@@ -41,8 +40,7 @@ public class NumberOfChecking {
 			}
 
 		}
-		numChecks = checks[k][n];
-		return numChecks;
+		return checks[k][n];
 	}
 
 	public static void main(String[] args) {
