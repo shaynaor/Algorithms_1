@@ -1,6 +1,5 @@
 package aeroplane_problem;
 
-import aeroplane_problem.AeroplaneProblem.Node;
 
 public class Main {
 

@@ -34,7 +34,7 @@ public class PrisonersAlgorithm {
 	}
 
 	public static void main(String[] args) {
-		int steps = prisonersLampOn(10);
+		int steps = prisonersLampOn(30);
 		System.out.println(steps);
 
 	}

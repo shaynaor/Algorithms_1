@@ -8,12 +8,15 @@ public class SubmatrixDP {
 		int row = m.length;
 		int col = m[0].length;
 
-		int[][] h = new int[row][col];
-
-		for (int i = 0; i < row; i++) {
+		int[][] h = new int[row][col];//help matrix
+		
+		/* Copy to help matrix the first row from m matrix */
+		for (int i = 0; i < row; i++) {//O(n)
 			h[i][0] = m[i][0];
 		}
-		for (int j = 0; j < col; j++) {
+		
+		/* Copy to help matrix the first col from m matrix */
+		for (int j = 0; j < col; j++) {//O(n)
 			h[0][j] = m[0][j];
 		}
 		int maxSize = h[0][0], maxI = 0, maxJ = 0;
