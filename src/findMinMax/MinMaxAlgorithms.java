@@ -280,6 +280,7 @@ public class MinMaxAlgorithms {
 					max2 = a[a.length] - 1;
 			}
 		}
+		System.out.println("max1: " + max1 + ", max2: " + max2) ;
 		return comparisons;
 	}
 
@@ -369,6 +370,9 @@ public class MinMaxAlgorithms {
 				"The number of comparisons for algorithem findMaxMax5 to find min and max value in array that contains contains "
 						+ n + " numbers  is: " + findMaxMax5(arr));
 		System.out.println();
+		
+		int a[] = {1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8,9,0,2,5,8,3,6,9,1,4,7};
+		findMaxMax5(a);
 	}
 
 }

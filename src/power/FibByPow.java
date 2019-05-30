@@ -27,7 +27,8 @@ public class FibByPow {
 
 	public static void main(String[] args) {
 		System.out.println(fibLoop(8));
-
+		String s = new String();
+		
 	}
 
 }

@@ -2,7 +2,7 @@ package glassBall;
 
 public class NumberOfChecking {
 
-	public static int numberOfChecking(int n) {
+	public static int numberOfChecking2(int n) {
 		int f[] = new int[n + 1];
 		f[0] = 0;
 		f[1] = 1;
@@ -44,7 +44,7 @@ public class NumberOfChecking {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(numberOfChecking(3));
+		System.out.println(numberOfChecking2(3));
 		System.out.println(numberOfChecking(100, 2));
 	}
 

@@ -36,7 +36,7 @@ public class ParkingProblem2 {
 					count = 1;
 					currNode = currNode.getNext();
 				}
-			} else { /* The sign is 'w' */
+			} else { /* The sign is not 'v' */
 				currNode = currNode.getNext();
 				count++;
 			}

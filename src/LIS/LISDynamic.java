@@ -19,7 +19,7 @@ public class LISDynamic {//O(n^2) O(n) = O(n^2)
 //		}
 
 		/* Compute optimized LIS values */
-		for (i = 1; i < n; i++) {//O(n^2)
+		for (i = 0; i < n; i++) {//O(n^2)
 			/* Initialize d[],p[] values for all indexes */
 			d[i] = 1;
 			p[i] = -1;

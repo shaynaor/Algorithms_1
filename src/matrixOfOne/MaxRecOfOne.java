@@ -70,7 +70,7 @@ public class MaxRecOfOne {
 		/* while we didnt reach to the end of the hist */
 		while (i < n) {
 			/*
-			 * If the current value is bigger the the value in the top of the stack or the
+			 * If the current value is bigger then the value in the top of the stack or the
 			 * stack is empty add him to the stack.
 			 */
 			if (s.empty() || hist[s.peek()] <= hist[i])

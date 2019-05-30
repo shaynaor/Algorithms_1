@@ -61,7 +61,9 @@ public class LcsDynamic {
 		String x = "ABCBDA";
 		String y = "BDCAB";
 		LcsDynamic xGy = new LcsDynamic(x, y);
+		LcsDynamic yGx = new LcsDynamic(y, x);
 		System.out.println(xGy);
+		System.out.println(yGx);
 	}
 
 }
